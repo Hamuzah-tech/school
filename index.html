@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-yellow-50">
+    <nav class="sticky top-0 z-50">
+        <div class="w-full">
+            <!-- Primary Navigation -->
+            <div class="flex items-center justify-between py-4 bg-white text-blue-900 w-full px-4">
+                <div class="flex items-center">
+                    <img src="school_logo.png" alt="School Logo" class="h-16">
+                </div>
+                <div class="flex items-center space-x-6">
+                    <div class="hidden md:flex items-center space-x-4">
+                        <a href="tel:+1234567890" class="hover:text-yellow-200">
+                            <i class="fas fa-phone"></i> (123) 456-7890
+                        </a>
+                        <a href="mailto:info@school.com" class="hover:text-yellow-200">
+                            <i class="fas fa-envelope"></i> info@school.com
+                        </a>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-yellow-200"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-yellow-200"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-yellow-200"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-yellow-200"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <button id="menuBtn" class="md:hidden text-2xl">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Secondary Navigation -->
+            <div class="py-4 bg-blue-900 text-white w-full">
+                <ul id="mobileMenu" class="hidden md:flex flex-col md:flex-row justify-center md:space-x-4 transition-all duration-300 ease-in-out container mx-auto">
+                    <li class="group relative">
+                        <a href="#" class="block px-3 py-2 hover:text-yellow-200">Home</a>
+                    </li>
+                    <li class="group relative">
+                        <a href="#" class="block px-3 py-2 hover:text-yellow-200 flex items-center justify-between">
+                            About Us
+                            <i class="fas fa-chevron-down ml-1 md:hidden"></i>
+                        </a>
+                        <ul class="hidden group-hover:block md:absolute bg-blue-800 min-w-[200px] shadow-lg left-1/2 transform -translate-x-1/2">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">History</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Mission & Vision</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">School Leadership</a></li>
+                        </ul>
+                    </li>
+                    <li class="group relative">
+                        <a href="#" class="block px-3 py-2 hover:text-yellow-200 flex items-center justify-between">
+                            Academics
+                            <i class="fas fa-chevron-down ml-1 md:hidden"></i>
+                        </a>
+                        <ul class="hidden group-hover:block md:absolute bg-blue-800 min-w-[200px] shadow-lg left-1/2 transform -translate-x-1/2">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Subjects & Curriculum</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Exams & Assessments</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Academic Calendar</a></li>
+                        </ul>
+                    </li>
+                    <li class="group relative">
+                        <a href="#" class="block px-3 py-2 hover:text-yellow-200 flex items-center justify-between">
+                            Admissions
+                            <i class="fas fa-chevron-down ml-1 md:hidden"></i>
+                        </a>
+                        <ul class="hidden group-hover:block md:absolute bg-blue-800 min-w-[200px] shadow-lg left-1/2 transform -translate-x-1/2">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Admission Process</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Fees & Scholarships</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Prospectus</a></li>
+                        </ul>
+                    </li>
+                    <li class="group relative">
+                        <a href="#" class="block px-3 py-2 hover:text-yellow-200 flex items-center justify-between">
+                            Student Life
+                            <i class="fas fa-chevron-down ml-1 md:hidden"></i>
+                        </a>
+                        <ul class="hidden group-hover:block md:absolute bg-blue-800 min-w-[200px] shadow-lg left-1/2 transform -translate-x-1/2">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Extracurricular Activities</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Sports</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Clubs & Societies</a></li>
+                        </ul>
+                    </li>
+                    <li class="group relative">
+                        <a href="#" class="block px-3 py-2 hover:text-yellow-200 flex items-center justify-between">
+                            Gallery
+                            <i class="fas fa-chevron-down ml-1 md:hidden"></i>
+                        </a>
+                        <ul class="hidden group-hover:block md:absolute bg-blue-800 min-w-[200px] shadow-lg left-1/2 transform -translate-x-1/2">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Photos</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Videos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <script>
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const dropdownLinks = document.querySelectorAll('.group > a');
+        let isOpen = false;
+
+        menuBtn.addEventListener('click', () => {
+            isOpen = !isOpen;
+            menuBtn.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            mobileMenu.classList.toggle('hidden');
+            mobileMenu.classList.toggle('flex');
+        });
+
+        // Handle mobile dropdowns
+        if (window.innerWidth < 768) {
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    if (link.nextElementSibling) {
+                        e.preventDefault();
+                        const dropdown = link.nextElementSibling;
+                        const isDropdownVisible = !dropdown.classList.contains('hidden');
+                        
+                        // Close all other dropdowns
+                        document.querySelectorAll('.group > ul').forEach(ul => {
+                            if (ul !== dropdown) {
+                                ul.classList.add('hidden');
+                            }
+                        });
+
+                        // Toggle current dropdown
+                        dropdown.classList.toggle('hidden');
+                        
+                        // Rotate arrow icon
+                        const arrow = link.querySelector('.fa-chevron-down');
+                        if (arrow) {
+                            arrow.style.transform = isDropdownVisible ? 'rotate(0deg)' : 'rotate(180deg)';
+                        }
+                    }
+                });
+            });
+        }
+    </script>
+    
+    <!-- Hero Slider Section -->
+<div class="relative overflow-hidden">
+    <!-- Slider Container -->
+    <div class="slider-container relative h-[600px]">
+        <!-- Slide 1 -->
+        <div class="slide absolute w-full h-full bg-cover bg-center transition-opacity duration-1000" style="background-image: url('hero1.jpg');">
+            <div class="absolute inset-0 bg-black bg-opacity-50">
+                <div class="container mx-auto px-4 h-full flex items-center justify-center">
+                    <div class="text-white max-w-2xl text-center">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-[fade-up_1s_ease-out]">Welcome to Our School</h1>
+                        <p class="text-xl mb-8 animate-[fade-up_1.2s_ease-out]">Nurturing minds, Building futures</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="slide absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('hero2.jpg');">
+            <div class="absolute inset-0 bg-black bg-opacity-50">
+                <div class="container mx-auto px-4 h-full flex items-center justify-center">
+                    <div class="text-white max-w-2xl text-center">
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-[fade-up_1s_ease-out]">Excellence in Education</h1>
+                        <p class="text-xl mb-8 animate-[fade-up_1.2s_ease-out]">Preparing leaders of tomorrow</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Stats Counter Section -->
+    <div class="bg-blue-900 bg-opacity-90 py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white">
+                <div class="counter-item">
+                    <div class="text-4xl font-bold mb-2"><span class="counter" data-target="90">0</span>+</div>
+                    <p>Selected to Public Universities This Year</p>
+                </div>
+                <div class="counter-item">
+                    <div class="text-4xl font-bold mb-2"><span class="counter" data-target="30">0</span>+</div>
+                    <p>Years of Excellence</p>
+                </div>
+                <div class="counter-item">
+                    <div class="text-4xl font-bold mb-2"><span class="counter" data-target="100">0</span>%</div>
+                    <p>Student Success Rate</p>
+                </div>
+                <div class="counter-item">
+                    <div class="text-4xl font-bold mb-2"><span class="counter" data-target="50">0</span>+</div>
+                    <p>Expert Faculty Members</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // Slider functionality
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function nextSlide() {
+        slides[currentSlide].style.opacity = '0';
+        currentSlide = (currentSlide + 1) % slides.length;
+        slides[currentSlide].style.opacity = '1';
+    }
+
+    setInterval(nextSlide, 5000);
+
+    // Counter animation
+    const counters = document.querySelectorAll('.counter');
+    
+    counters.forEach(counter => {
+        const target = parseInt(counter.getAttribute('data-target'));
+        const duration = 2000; // 2 seconds
+        const increment = target / (duration / 16); // 60 FPS
+        let current = 0;
+
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                counter.textContent = Math.floor(current);
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.textContent = target;
+            }
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                updateCounter();
+                observer.unobserve(counter);
+            }
+        });
+
+        observer.observe(counter);
+    });
+</script>
+
+<footer class="bg-blue-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- School Info -->
+                <div>
+                    <img src="school_logo.png" alt="School Logo" class="h-16 mb-4">
+                    <h3 class="text-xl font-bold mb-4">School Name</h3>
+                    <p class="mb-4">Brief Description / Motto goes here</p>
+                    <div class="mb-4">
+                        <h4 class="font-semibold mb-2">Accreditation & Affiliations</h4>
+                        <p>List of accreditations</p>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-yellow-100">Home</a></li>
+                        <li><a href="#" class="hover:text-yellow-100">About Us</a></li>
+                        <li><a href="#" class="hover:text-yellow-100">Admissions</a></li>
+                        <li><a href="#" class="hover:text-yellow-100">Academics</a></li>
+                        <li><a href="#" class="hover:text-yellow-100">Student Life</a></li>
+                        <li><a href="#" class="hover:text-yellow-100">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <div class="space-y-2">
+                        <p><i class="fas fa-map-marker-alt mr-2"></i>Address goes here</p>
+                        <p><i class="fas fa-phone mr-2"></i>Phone number</p>
+                        <p><i class="fas fa-envelope mr-2"></i>Email address</p>
+                    </div>
+                </div>
+
+                <!-- Social Media & Newsletter -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-6">
+                        <a href="#" class="hover:text-yellow-100"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-yellow-100"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-yellow-100"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-yellow-100"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <h4 class="font-semibold mb-2">Subscribe to Our Newsletter</h4>
+                    <form class="space-y-2">
+                        <input type="email" placeholder="Enter your email" 
+                            class="w-full px-3 py-2 bg-blue-800 rounded focus:outline-none focus:ring-2 focus:ring-yellow-100">
+                        <button type="submit" 
+                            class="w-full bg-blue-700 hover:bg-blue-800 px-4 py-2 rounded">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Legal & Policies -->
+            <div class="border-t border-blue-800 mt-8 pt-8 text-sm text-white">
+                <div class="flex flex-wrap justify-between">
+                    <div class="space-x-4">
+                        <a href="#" class="hover:text-yellow-100">Privacy Policy</a>
+                        <a href="#" class="hover:text-yellow-100">Terms of Use</a>
+                        <span>© 2024 School Name. All rights reserved.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Scroll-Triggered Popup -->
+    <div id="scrollPopup" class="fixed bottom-4 right-4 bg-white rounded-lg shadow-xl p-6 transform translate-y-full transition-transform duration-300 hidden">
+        <div class="text-center">
+            <h3 class="text-2xl font-bold text-blue-900 mb-4">Enroll Now for a Brighter Future</h3>
+            <a href="#" class="inline-block bg-blue-900 text-yellow-100 px-6 py-3 rounded-lg hover:bg-blue-800 transition duration-300">
+                Enroll Now
+            </a>
+        </div>
+        <button onclick="closePopup()" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <script>
+        let popupShown = false;
+        
+        window.addEventListener('scroll', function() {
+            if (!popupShown && window.scrollY > 300) { // Show after scrolling 300px
+                const popup = document.getElementById('scrollPopup');
+                popup.classList.remove('hidden');
+                setTimeout(() => {
+                    popup.classList.remove('translate-y-full');
+                }, 100);
+                popupShown = true;
+            }
+        });
+
+        function closePopup() {
+            const popup = document.getElementById('scrollPopup');
+            popup.classList.add('translate-y-full');
+            setTimeout(() => {
+                popup.classList.add('hidden');
+            }, 300);
+        }
+    </script>
+
+
+</body>
+</html>

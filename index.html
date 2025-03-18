@@ -8,27 +8,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-yellow-50">
-    <nav class="sticky top-0 z-50">
+    <nav class="sticky top-0 z-[100]">
         <div class="w-full">
             <!-- Primary Navigation -->
             <div class="flex items-center justify-between py-4 bg-white text-blue-900 w-full px-4">
                 <div class="flex items-center">
-                    <img src="school_logo.png" alt="School Logo" class="h-16">
-                </div>
+                    <img src="school_logo.jpg" alt="School Logo" class="h-16">
+                    <img src="pop.png" alt="School Logo" class="h-16">                </div>
                 <div class="flex items-center space-x-6">
                     <div class="hidden md:flex items-center space-x-4">
-                        <a href="tel:+1234567890" class="hover:text-yellow-200">
+                        <a href="tel:+1234567890" class="hover:text-sky-200">
                             <i class="fas fa-phone"></i> (123) 456-7890
                         </a>
-                        <a href="mailto:info@school.com" class="hover:text-yellow-200">
+                        <a href="mailto:info@school.com" class="hover:text-sky-200">
                             <i class="fas fa-envelope"></i> info@school.com
                         </a>
                     </div>
                     <div class="flex space-x-4">
-                        <a href="#" class="hover:text-yellow-200"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="hover:text-yellow-200"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="hover:text-yellow-200"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-yellow-200"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="hover:text-sky-200"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="hover:text-sky-200"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="hover:text-sky-200"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="hover:text-sky-200"><i class="fab fa-linkedin"></i></a>
                     </div>
                     <button id="menuBtn" class="md:hidden text-2xl">
                         <i class="fas fa-bars"></i>
@@ -38,128 +38,170 @@
             
             <!-- Secondary Navigation -->
             <div class="py-4 bg-blue-900 text-white w-full">
-                <ul id="mobileMenu" class="hidden md:flex flex-col md:flex-row justify-center md:space-x-4 transition-all duration-300 ease-in-out container mx-auto">
-                    <li class="group relative">
-                        <a href="#" class="block px-3 py-2 hover:text-yellow-200">Home</a>
-                    </li>
-                    <li class="group relative">
-                        <a href="#" class="block px-3 py-2 hover:text-yellow-200 flex items-center justify-between">
+                <ul id="mobileMenu" class="hidden md:flex flex-col md:flex-row justify-center md:space-x-4 transition-all duration-300 ease-in-out container mx-auto px-4 md:space-y-0 space-y-2">
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap flex justify-between items-center">
                             About Us
-                            <i class="fas fa-chevron-down ml-1 md:hidden"></i>
+                            <i class="fas fa-chevron-down ml-2 md:hidden"></i>
                         </a>
-                        <ul class="hidden group-hover:block md:absolute bg-blue-800 min-w-[200px] shadow-lg left-1/2 transform -translate-x-1/2">
+                        <ul class="hidden md:invisible group-hover:md:visible absolute md:top-full md:left-0 bg-blue-800 min-w-[200px] shadow-lg w-full md:w-auto">
                             <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">History</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Mission & Vision</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">School Leadership</a></li>
                         </ul>
                     </li>
-                    <li class="group relative">
-                        <a href="#" class="block px-3 py-2 hover:text-yellow-200 flex items-center justify-between">
-                            Academics
-                            <i class="fas fa-chevron-down ml-1 md:hidden"></i>
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap flex justify-between items-center">
+                            Primary
+                            <i class="fas fa-chevron-down ml-2 md:hidden"></i>
                         </a>
-                        <ul class="hidden group-hover:block md:absolute bg-blue-800 min-w-[200px] shadow-lg left-1/2 transform -translate-x-1/2">
-                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Subjects & Curriculum</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Exams & Assessments</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Academic Calendar</a></li>
+                        <ul class="hidden md:invisible group-hover:md:visible absolute md:top-full md:left-0 bg-blue-800 min-w-[200px] shadow-lg w-full md:w-auto">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Curriculum</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Activities</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Schedule</a></li>
                         </ul>
                     </li>
-                    <li class="group relative">
-                        <a href="#" class="block px-3 py-2 hover:text-yellow-200 flex items-center justify-between">
-                            Admissions
-                            <i class="fas fa-chevron-down ml-1 md:hidden"></i>
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap flex justify-between items-center">
+                            Secondary
+                            <i class="fas fa-chevron-down ml-2 md:hidden"></i>
                         </a>
-                        <ul class="hidden group-hover:block md:absolute bg-blue-800 min-w-[200px] shadow-lg left-1/2 transform -translate-x-1/2">
-                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Admission Process</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Fees & Scholarships</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Prospectus</a></li>
+                        <ul class="hidden md:invisible group-hover:md:visible absolute md:top-full md:left-0 bg-blue-800 min-w-[200px] shadow-lg w-full md:w-auto">
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Curriculum</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Activities</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Schedule</a></li>
                         </ul>
                     </li>
-                    <li class="group relative">
-                        <a href="#" class="block px-3 py-2 hover:text-yellow-200 flex items-center justify-between">
-                            Student Life
-                            <i class="fas fa-chevron-down ml-1 md:hidden"></i>
-                        </a>
-                        <ul class="hidden group-hover:block md:absolute bg-blue-800 min-w-[200px] shadow-lg left-1/2 transform -translate-x-1/2">
-                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Extracurricular Activities</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Sports</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Clubs & Societies</a></li>
-                        </ul>
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap">Parent Information</a>
                     </li>
-                    <li class="group relative">
-                        <a href="#" class="block px-3 py-2 hover:text-yellow-200 flex items-center justify-between">
-                            Gallery
-                            <i class="fas fa-chevron-down ml-1 md:hidden"></i>
-                        </a>
-                        <ul class="hidden group-hover:block md:absolute bg-blue-800 min-w-[200px] shadow-lg left-1/2 transform -translate-x-1/2">
-                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Photos</a></li>
-                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Videos</a></li>
-                        </ul>
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap">Examinations</a>
+                    </li>
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap">Boarding</a>
+                    </li>
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap">Clubs</a>
+                    </li>
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap">News</a>
+                    </li>
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap">Updates</a>
+                    </li>
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap">Student Portfolio</a>
+                    </li>
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap">Contact Us</a>
+                    </li>
+                    <li class="group relative md:border-r border-gray-500 last:border-r-0">
+                        <a href="#" class="block px-2 py-2 hover:text-sky-200 whitespace-nowrap">Vacancies</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <script>
-        const menuBtn = document.getElementById('menuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const dropdownLinks = document.querySelectorAll('.group > a');
-        let isOpen = false;
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuBtn = document.getElementById('menuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const dropdownLinks = document.querySelectorAll('.group > a');
 
-        menuBtn.addEventListener('click', () => {
-            isOpen = !isOpen;
-            menuBtn.innerHTML = isOpen ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
-            mobileMenu.classList.toggle('hidden');
-            mobileMenu.classList.toggle('flex');
-        });
+            menuBtn.addEventListener('click', () => {
+                menuBtn.innerHTML = mobileMenu.classList.contains('hidden') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+                mobileMenu.classList.toggle('hidden');
+                mobileMenu.classList.toggle('flex');
+            });
 
-        // Handle mobile dropdowns
-        if (window.innerWidth < 768) {
             dropdownLinks.forEach(link => {
                 link.addEventListener('click', (e) => {
                     if (link.nextElementSibling) {
                         e.preventDefault();
                         const dropdown = link.nextElementSibling;
-                        const isDropdownVisible = !dropdown.classList.contains('hidden');
+                        const chevron = link.querySelector('.fa-chevron-down');
                         
-                        // Close all other dropdowns
-                        document.querySelectorAll('.group > ul').forEach(ul => {
-                            if (ul !== dropdown) {
-                                ul.classList.add('hidden');
-                            }
-                        });
+                        if (window.innerWidth < 768) {
+                            // Close all other dropdowns
+                            dropdownLinks.forEach(otherLink => {
+                                if (otherLink !== link && otherLink.nextElementSibling) {
+                                    otherLink.nextElementSibling.classList.add('hidden');
+                                    const otherChevron = otherLink.querySelector('.fa-chevron-down');
+                                    if (otherChevron) {
+                                        otherChevron.style.transform = 'rotate(0deg)';
+                                    }
+                                }
+                            });
 
-                        // Toggle current dropdown
-                        dropdown.classList.toggle('hidden');
-                        
-                        // Rotate arrow icon
-                        const arrow = link.querySelector('.fa-chevron-down');
-                        if (arrow) {
-                            arrow.style.transform = isDropdownVisible ? 'rotate(0deg)' : 'rotate(180deg)';
+                            // Toggle current dropdown
+                            dropdown.classList.toggle('hidden');
+                            dropdown.classList.remove('md:invisible');
+                            dropdown.style.position = 'static';
+                            if (chevron) {
+                                chevron.style.transform = dropdown.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+                            }
                         }
                     }
                 });
             });
-        }
-    </script>
-    
+
+            // Close dropdowns when clicking outside
+            document.addEventListener('click', (e) => {
+                if (!e.target.closest('.group')) {
+                    document.querySelectorAll('.group > ul').forEach(dropdown => {
+                        if (window.innerWidth < 768) {
+                            dropdown.classList.add('hidden');
+                            dropdown.style.position = '';
+                        } else {
+                            dropdown.classList.add('md:invisible');
+                        }
+                        const chevron = dropdown.previousElementSibling.querySelector('.fa-chevron-down');
+                        if (chevron) {
+                            chevron.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                }
+            });
+
+            // Reset mobile menu state on window resize
+            window.addEventListener('resize', () => {
+                if (window.innerWidth >= 768) {
+                    mobileMenu.classList.remove('flex');
+                    mobileMenu.classList.add('hidden', 'md:flex');
+                    menuBtn.innerHTML = '<i class="fas fa-bars"></i>';
+                    
+                    // Reset all dropdowns
+                    document.querySelectorAll('.group > ul').forEach(dropdown => {
+                        dropdown.classList.remove('hidden');
+                        dropdown.classList.add('md:invisible');
+                        dropdown.style.position = '';
+                        const chevron = dropdown.previousElementSibling.querySelector('.fa-chevron-down');
+                        if (chevron) {
+                            chevron.style.transform = 'rotate(0deg)';
+                        }
+                    });
+                }
+            });
+        });
+    </script>    
     <!-- Hero Slider Section -->
 <div class="relative overflow-hidden">
     <!-- Slider Container -->
     <div class="slider-container relative h-[600px]">
         <!-- Slide 1 -->
-        <div class="slide absolute w-full h-full bg-cover bg-center transition-opacity duration-1000" style="background-image: url('Hero1.jpg');">
+        <div class="slide absolute w-full h-full bg-cover bg-center transition-opacity duration-1000" style="background-image: url('hero1.jpg');">
             <div class="absolute inset-0 bg-black bg-opacity-50">
                 <div class="container mx-auto px-4 h-full flex items-center justify-center">
                     <div class="text-white max-w-2xl text-center">
-                        <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-[fade-up_1s_ease-out]">Welcome to Our School</h1>
-                        <p class="text-xl mb-8 animate-[fade-up_1.2s_ease-out]">Nurturing minds, Building futures</p>
+                        <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-[fade-up_1s_ease-out]">Welcome to <br>Sir Harry Johnston Internatonal School</h1>
+                        <p class="text-xl mb-8 animate-[fade-up_1.2s_ease-out]">A British International School offering a complete education, from Pre-Nursery to Year 11.</p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- Slide 2 -->
-        <div class="slide absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('Hero2.jpg');">
+        <div class="slide absolute w-full h-full bg-cover bg-center transition-opacity duration-1000 opacity-0" style="background-image: url('hero2.jpg');">
             <div class="absolute inset-0 bg-black bg-opacity-50">
                 <div class="container mx-auto px-4 h-full flex items-center justify-center">
                     <div class="text-white max-w-2xl text-center">
@@ -309,43 +351,5 @@
             </div>
         </div>
     </footer>
-
-<!-- Scroll-Triggered Popup -->
-    <div id="scrollPopup" class="fixed bottom-4 right-4 bg-white rounded-lg shadow-xl p-6 transform translate-y-full transition-transform duration-300 hidden">
-        <div class="text-center">
-            <h3 class="text-2xl font-bold text-blue-900 mb-4">Enroll Now for a Brighter Future</h3>
-            <a href="#" class="inline-block bg-blue-900 text-yellow-100 px-6 py-3 rounded-lg hover:bg-blue-800 transition duration-300">
-                Enroll Now
-            </a>
-        </div>
-        <button onclick="closePopup()" class="absolute top-2 right-2 text-gray-500 hover:text-gray-700">
-            <i class="fas fa-times"></i>
-        </button>
-    </div>
-
-    <script>
-        let popupShown = false;
-        
-        window.addEventListener('scroll', function() {
-            if (!popupShown && window.scrollY > 300) { // Show after scrolling 300px
-                const popup = document.getElementById('scrollPopup');
-                popup.classList.remove('hidden');
-                setTimeout(() => {
-                    popup.classList.remove('translate-y-full');
-                }, 100);
-                popupShown = true;
-            }
-        });
-
-        function closePopup() {
-            const popup = document.getElementById('scrollPopup');
-            popup.classList.add('translate-y-full');
-            setTimeout(() => {
-                popup.classList.add('hidden');
-            }, 300);
-        }
-    </script>
-
-
 </body>
 </html>

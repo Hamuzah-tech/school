@@ -76,7 +76,7 @@
                         </a>
                         <ul class="hidden md:group-hover:block absolute md:top-full md:left-0 bg-blue-800 min-w-[200px] shadow-lg w-full md:w-auto z-50">
                             <li><a href="principal's.html" class="block px-4 py-2 hover:bg-blue-700">Principal's Welcome</a></li>
-                            <li><a href="vision & missio.html" class="block px-4 py-2 hover:bg-blue-700">Our Vision and Mission</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Our Vision and Mission</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">School Development Plan</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Our Team</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">School History</a></li>
@@ -120,7 +120,7 @@
                             <li><a href="school_admission.html" class="block px-4 py-2 hover:bg-blue-700">Admission</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">School Fees</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Uniform</a></li>
-                            <li><a href="calendar.html" class="block px-4 py-2 hover:bg-blue-700">Term Dates</a></li>
+                            <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Term Dates</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Anzathu (PTA)</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Swimming Pool</a></li>
                             <li><a href="#" class="block px-4 py-2 hover:bg-blue-700">Internet Safety</a></li>
@@ -261,261 +261,163 @@
                 }, 100);
             });
         });
-    </script> 
-    
-    <!-- Hero Slider Section -->
-<div class="relative overflow-hidden">
+    </script><body class="bg-gray-50">
+
     <!-- Hero Section -->
-    <div class="relative h-[600px]">
-        <div class="w-full h-full bg-cover bg-center" style="background-image: url('hero1.jpg');">
-            <div class="absolute inset-0 bg-black bg-opacity-50">
-                <div class="container mx-auto px-4 h-full flex items-center justify-center">
-                    <div class="text-sky-200 max-w-2xl text-center">
-                        <h1 class="text-3xl md:text-5xl font-bold mb-4 opacity-0 animate-[slideIn_1s_ease-out_forwards]">Welcome to <br>Sir Harry Johnston International School</h1>
-                        <p class="text-xl mb-8 opacity-0 animate-[slideIn_1s_ease-out_0.2s_forwards]">A British International School offering a complete education, from Pre-Nursery to Year 11.</p>
-                        <div class="flex justify-center gap-4">
-                            <a href="school_admission.html" class="bg-blue-900 hover:bg-sky-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300"><i class="fas fa-user-plus mr-2"></i>Admissions</a>
-                            <a href="index.php" class="bg-blue-900 hover:bg-sky-500 text-white font-bold py-3 px-6 rounded-full shadow-lg transform hover:scale-105 transition duration-300"><i class="fas fa-newspaper mr-2"></i>News & Events</a>
+    <section class="relative h-[40vh] flex items-center justify-center bg-cover bg-center bg-fixed overflow-hidden" 
+             style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Hero1.jpg');">
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent to-black/50"></div>
+        <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-sky-300 text-4xl md:text-6xl font-bold mb-4 animate-fade-in">
+                School Admissions
+            </h1>
+            <p class="text-gray-200 text-xl md:text-2xl font-light">
+                Begin Your Educational Journey With Us
+            </p>
+        </div>
+    </section>
+
+    <!-- Admission Content -->
+    <div class="max-w-4xl mx-auto mt-10 px-4">
+        
+        <!-- Online Admission Form -->
+        <div class="bg-white shadow-lg rounded-lg p-6 mb-8">
+            <h2 class="text-2xl font-semibold text-blue-900 mb-4">Apply Online</h2>
+            <p class="mb-4">Please select your admission type:</p>
+            <div class="flex flex-col space-y-3">
+                <a href="primary_online_admission.html" class="text-sky-500 hover:text-sky-700 hover:translate-x-2 transition-transform duration-300">
+                    <i class="fas fa-chevron-right mr-2"></i>Primary School Admission
+                </a>
+                <a href="secondary_online_admission.html" class="text-sky-500 hover:text-sky-700 hover:translate-x-2 transition-transform duration-300">
+                    <i class="fas fa-chevron-right mr-2"></i>Secondary School Admission
+                </a>
+                <a href="boarding_online_admission.html" class="text-sky-500 hover:text-sky-700 hover:translate-x-2 transition-transform duration-300">
+                    <i class="fas fa-chevron-right mr-2"></i>Boarding School Admission
+                </a>
+            </div>
+        </div>
+
+        <!-- Downloadable Forms -->
+        <div class="bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300">
+            <h2 class="text-2xl font-semibold text-blue-900 mb-4">Download Admission Forms</h2>
+            <p class="mb-4">Please download and complete the appropriate form below. Submit the filled form to <span class="text-sky-500">admissions</span> via:</p>
+            <p class="mb-4">
+                <a href="mailto:greatlearning@sirharryszomba.com" class="text-sky-600 hover:text-sky-800 transition-colors duration-300">greatlearning@sirharryszomba.com</a>
+                <br>
+                <span class="text-gray-600">P.O. Box 52,
+
+                    Kalimbuka Road,
+        
+                    Zomba,
+        
+                    Malawi.</span>
+            </p>
+            <ul class="space-y-3">
+                <li class="transition-transform duration-300 hover:translate-x-2">
+                    <a href="primary_admission_form.docx" class="flex items-center gap-2 text-blue-700 hover:text-blue-900">
+                        <i class="fas fa-file-word text-blue-500"></i> Primary School Admission Form
+                    </a>
+                </li>
+                <li class="transition-transform duration-300 hover:translate-x-2">
+                    <a href="secondary_admission_form.docx" class="flex items-center gap-2 text-blue-700 hover:text-blue-900">
+                        <i class="fas fa-file-word text-blue-500"></i> Secondary School Admission Form
+                    </a>
+                </li>
+                <li class="transition-transform duration-300 hover:translate-x-2">
+                    <a href="boarding_admission_form.docx" class="flex items-center gap-2 text-blue-700 hover:text-blue-900">
+                        <i class="fas fa-file-word text-blue-500"></i> Boarding School Admission Form
+                    </a>
+                </li>
+            </ul>        </div>
+    </div>
+
+          <script>
+              window.onload = function() {
+                  Swal.fire({
+                      title: 'Welcome!',
+                      text: 'You can apply online or download forms and follow the instructions',
+                      icon: 'info',
+                      confirmButtonText: 'Continue',
+                      background: '#ffffff',
+                      titleColor: '#1e3a8a',
+                      customClass: {
+                          title: 'text-blue-900',
+                          confirmButton: 'bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded'
+                      }
+                  });
+              }
+          </script>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+
+          <footer class="bg-blue-900 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- School Info -->
+                    <div>
+                        <img src="school_logo.jpg" alt="School Logo" class="h-16 mb-4 rounded-full">
+                        <h3 class="text-xl font-bold mb-4">Sir Harry Johnston International School</h3>
+                        <p class="mb-4">Developing Future Leaders</p>
+                    </div>
+    
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-yellow-100">Home</a></li>
+                            <li><a href="#" class="hover:text-yellow-100">About Us</a></li>
+                            <li><a href="#" class="hover:text-yellow-100">Admissions</a></li>
+                            <li><a href="#" class="hover:text-yellow-100">Academics</a></li>
+                            <li><a href="#" class="hover:text-yellow-100">Student Life</a></li>
+                            <li><a href="#" class="hover:text-yellow-100">Contact Us</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Contact Information -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                        <div class="space-y-2">
+                            <p><i class="fas fa-map-marker-alt mr-2"></i>P.O. Box 52,
+    
+                                Kalimbuka Road, <br>
+                    
+                                Zomba,
+                    
+                                Malawi.</p>
+                            <p><i class="fas fa-phone mr-2"></i>+265 (0)1 11 625 280</p>
+                            <p><i class="fas fa-envelope mr-2"></i>greatlearning@sirharryszomba.com </p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Stats Counter Section -->
-<div class="bg-blue-900 bg-opacity-90 py-8">
-    <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center text-white">
-            <div class="counter-item">
-                <div class="text-4xl font-bold mb-2"><span class="counter" data-target="90">0</span>+</div>
-                <p>Selected to Public Universities This Year</p>
-            </div>
-            <div class="counter-item">
-                <div class="text-4xl font-bold mb-2"><span class="counter" data-target="30">0</span>+</div>
-                <p>Years of Excellence</p>
-            </div>
-            <div class="counter-item">
-                <div class="text-4xl font-bold mb-2"><span class="counter" data-target="100">0</span>%</div>
-                <p>Student Success Rate</p>
-            </div>
-            <div class="counter-item">
-                <div class="text-4xl font-bold mb-2"><span class="counter" data-target="50">0</span>+</div>
-                <p>Expert Faculty Members</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script>
-    // Add keyframes for slideIn animation
-    const styleSheet = document.createElement('style');
-    styleSheet.textContent = `
-        @keyframes slideIn {
-            from {
-                transform: translateX(-100%);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-    `;
-    document.head.appendChild(styleSheet);
-
-    // Counter animation
-    const counters = document.querySelectorAll('.counter');
     
-    counters.forEach(counter => {
-        const target = parseInt(counter.getAttribute('data-target'));
-        const duration = 2000; // 2 seconds
-        const increment = target / (duration / 16); // 60 FPS
-        let current = 0;
-
-        const updateCounter = () => {
-            current += increment;
-            if (current < target) {
-                counter.textContent = Math.floor(current);
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.textContent = target;
-            }
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting) {
-                updateCounter();
-                observer.unobserve(counter);
-            }
-        });
-
-        observer.observe(counter);
-    });
-</script>
-
-<!-- Carousel Section -->
-<section class="relative w-full h-[600px] overflow-hidden bg-blue-900">
-    <div class="carousel-container relative h-full">
-        <!-- Slides -->
-        <div class="slide absolute w-full h-full opacity-0 transition-opacity duration-500 visible" aria-label="Students in classroom">
-            <img src="image1.jpg" alt="Students engaging in classroom activities" class="w-full h-full object-cover">
-        </div>
-
-        <div class="slide absolute w-full h-full opacity-0 transition-opacity duration-500" aria-label="Science laboratory">
-            <img src="image2.jpg" alt="Modern science laboratory" class="w-full h-full object-cover">
-        </div>
-
-        <div class="slide absolute w-full h-full opacity-0 transition-opacity duration-500" aria-label="Sports activities">
-            <img src="image3.jpg" alt="Students participating in sports" class="w-full h-full object-cover">
-        </div>
-
-        <div class="slide absolute w-full h-full opacity-0 transition-opacity duration-500" aria-label="Arts and culture">
-            <img src="image4.jpg" alt="Students performing arts" class="w-full h-full object-cover">
-        </div>
-
-        <div class="slide absolute w-full h-full opacity-0 transition-opacity duration-500" aria-label="Campus life">
-            <img src="image5.jpg" alt="Beautiful campus grounds" class="w-full h-full object-cover">
-        </div>
-
-        <!-- Navigation Arrows -->
-        <button class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-blue-900/50 hover:bg-blue-900 text-white p-4 rounded-full transition-colors" id="prevBtn" aria-label="Previous slide">
-            <i class="fas fa-chevron-left"></i>
-        </button>
-        <button class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-blue-900/50 hover:bg-blue-900 text-white p-4 rounded-full transition-colors" id="nextBtn" aria-label="Next slide">
-            <i class="fas fa-chevron-right"></i>
-        </button>
-
-        <!-- Navigation Dots -->
-        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
-            <button class="w-3 h-3 rounded-full bg-sky-200 opacity-50 hover:opacity-100 transition-opacity" aria-label="Go to slide 1"></button>
-            <button class="w-3 h-3 rounded-full bg-sky-200 opacity-50 hover:opacity-100 transition-opacity" aria-label="Go to slide 2"></button>
-            <button class="w-3 h-3 rounded-full bg-sky-200 opacity-50 hover:opacity-100 transition-opacity" aria-label="Go to slide 3"></button>
-            <button class="w-3 h-3 rounded-full bg-sky-200 opacity-50 hover:opacity-100 transition-opacity" aria-label="Go to slide 4"></button>
-            <button class="w-3 h-3 rounded-full bg-sky-200 opacity-50 hover:opacity-100 transition-opacity" aria-label="Go to slide 5"></button>
-        </div>
-    </div>
-</section>
-
-<script>
-    let carouselSlides;
-    let carouselDots;
-    let carouselCurrentSlide = 0;
-    
-    // Initialize carousel immediately
-    window.onload = () => {
-        carouselSlides = document.querySelectorAll('.slide');
-        carouselDots = document.querySelectorAll('.carousel-container button[aria-label^="Go to slide"]');
-        const prevBtn = document.getElementById('prevBtn');
-        const nextBtn = document.getElementById('nextBtn');
-
-        function showSlide(index) {
-            carouselSlides.forEach(slide => slide.style.opacity = '0');
-            carouselDots.forEach(dot => dot.style.opacity = '0.5');
-            
-            carouselSlides[index].style.opacity = '1';
-            carouselDots[index].style.opacity = '1';
-        }
-
-        function nextSlide() {
-            carouselCurrentSlide = (carouselCurrentSlide + 1) % carouselSlides.length;
-            showSlide(carouselCurrentSlide);
-        }
-
-        function prevSlide() {
-            carouselCurrentSlide = (carouselCurrentSlide - 1 + carouselSlides.length) % carouselSlides.length;
-            showSlide(carouselCurrentSlide);
-        }
-
-        prevBtn.addEventListener('click', prevSlide);
-        nextBtn.addEventListener('click', nextSlide);
-        
-        carouselDots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                carouselCurrentSlide = index;
-                showSlide(carouselCurrentSlide);
-            });
-        });
-
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'ArrowLeft') prevSlide();
-            if (e.key === 'ArrowRight') nextSlide();
-        });
-
-        showSlide(carouselCurrentSlide);
-        setInterval(nextSlide, 3000);
-    };
-</script>
-
-<footer class="bg-blue-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- School Info -->
-                <div>
-                    <img src="school_logo.jpg" alt="School Logo" class="h-16 mb-4 rounded-full">
-                    <h3 class="text-xl font-bold mb-4">Sir Harry Johnston International School</h3>
-                    <p class="mb-4">Developing Future Leaders</p>
-                </div>
-
-                <!-- Quick Links -->
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="hover:text-yellow-100">Home</a></li>
-                        <li><a href="#" class="hover:text-yellow-100">About Us</a></li>
-                        <li><a href="#" class="hover:text-yellow-100">Admissions</a></li>
-                        <li><a href="#" class="hover:text-yellow-100">Academics</a></li>
-                        <li><a href="#" class="hover:text-yellow-100">Student Life</a></li>
-                        <li><a href="#" class="hover:text-yellow-100">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact Information -->
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
-                    <div class="space-y-2">
-                        <p><i class="fas fa-map-marker-alt mr-2"></i>P.O. Box 52,
-
-                            Kalimbuka Road, <br>
-                
-                            Zomba,
-                
-                            Malawi.</p>
-                        <p><i class="fas fa-phone mr-2"></i>+265 (0)1 11 625 280</p>
-                        <p><i class="fas fa-envelope mr-2"></i>greatlearning@sirharryszomba.com </p>
+                    <!-- Social Media & Newsletter -->
+                    <div>
+                        <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                        <div class="flex space-x-4 mb-6">
+                            <a href="#" class="hover:text-yellow-100"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="hover:text-yellow-100"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="hover:text-yellow-100"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="hover:text-yellow-100"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <h4 class="font-semibold mb-2">Subscribe to Our Newsletter</h4>
+                        <form class="space-y-2">
+                            <input type="email" placeholder="Enter your email" 
+                                class="w-full px-3 py-2 bg-blue-800 rounded focus:outline-none focus:ring-2 focus:ring-yellow-100">
+                            <button type="submit" 
+                                class="w-full bg-blue-700 hover:bg-blue-800 px-4 py-2 rounded">
+                                Subscribe
+                            </button>
+                        </form>
                     </div>
                 </div>
-
-                <!-- Social Media & Newsletter -->
-                <div>
-                    <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
-                    <div class="flex space-x-4 mb-6">
-                        <a href="#" class="hover:text-yellow-100"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="hover:text-yellow-100"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="hover:text-yellow-100"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="hover:text-yellow-100"><i class="fab fa-linkedin"></i></a>
+    
+                <!-- Legal & Policies -->
+                <div class="border-t border-blue-800 mt-8 pt-8 text-sm text-white">
+                    <div class="flex flex-wrap justify-between">
+                        <div class="space-x-4">
+                            <span>© <script>document.write(new Date().getFullYear())</script> Sir Harry Johnston International School. All rights reserved.</span>                    </div>
                     </div>
-                    <h4 class="font-semibold mb-2">Subscribe to Our Newsletter</h4>
-                    <form class="space-y-2">
-                        <input type="email" placeholder="Enter your email" 
-                            class="w-full px-3 py-2 bg-blue-800 rounded focus:outline-none focus:ring-2 focus:ring-yellow-100">
-                        <button type="submit" 
-                            class="w-full bg-blue-700 hover:bg-blue-800 px-4 py-2 rounded">
-                            Subscribe
-                        </button>
-                    </form>
                 </div>
             </div>
-
-            <!-- Legal & Policies -->
-            <div class="border-t border-blue-800 mt-8 pt-8 text-sm text-white">
-                <div class="flex flex-wrap justify-between">
-                    <div class="space-x-4">
-                        <span>© <script>document.write(new Date().getFullYear())</script> Sir Harry Johnston International School. All rights reserved.</span>                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+        </footer>
+    </body>
+    </html>

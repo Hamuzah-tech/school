@@ -262,65 +262,65 @@
             });
         });
     </script> 
-<form action="" method="post" enctype="multipart/form-data" class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8 my-8">
-    <header class="flex items-center justify-between mb-8 bg-blue-900 text-white p-6 rounded-lg">
-        <img src="school_logo.jpg" alt="School Logo" class="w-24 h-24 rounded-full object-cover">
-        <div>
-            <h1 class="text-3xl font-bold mb-2">Sir Harry Johnston International School</h1>
-            <p class="text-sm">Kalimbuka Road P.O. Box 52 Zomba Malawi</p>
-            <p class="text-sm">Tel:  0111 625 280</p>
-            <p class="text-sm">Email: greatlearning@sirharryszomba.com</p>
-            <p class="text-sm">Website: www.sirharryszomba.com</p>
+<form action="" method="post" enctype="multipart/form-data" class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-4 sm:p-8 my-4 sm:my-8">
+    <header class="flex flex-col sm:flex-row items-center justify-between mb-6 sm:mb-8 bg-blue-900 text-white p-4 sm:p-6 rounded-lg space-y-4 sm:space-y-0">
+        <img src="school_logo.jpg" alt="School Logo" class="w-20 h-20 sm:w-24 sm:h-24 rounded-full object-cover">
+        <div class="text-center sm:text-left">
+            <h1 class="text-2xl sm:text-3xl font-bold mb-2">Sir Harry Johnston International School</h1>
+            <p class="text-xs sm:text-sm">Kalimbuka Road P.O. Box 52 Zomba Malawi</p>
+            <p class="text-xs sm:text-sm">Tel:  0111 625 280</p>
+            <p class="text-xs sm:text-sm">Email: greatlearning@sirharryszomba.com</p>
+            <p class="text-xs sm:text-sm">Website: www.sirharryszomba.com</p>
         </div>
     </header>
 
-    <h2 class="text-2xl font-bold text-center text-blue-900 mb-8">PRIMARY SCHOOL APPLICATION FOR ENROLMENT</h2>
+    <h2 class="text-xl sm:text-2xl font-bold text-center text-blue-900 mb-6 sm:mb-8">PRIMARY SCHOOL APPLICATION FOR ENROLMENT</h2>
 
-    <div class="mb-8">
-        <label class="block text-blue-900 font-semibold mb-2">PASSPORT SIZE PHOTOGRAPH OF CHILD</label>
-        <input type="file" name="passport_photo" accept="image/*" class="w-full p-2 border border-blue-200 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+    <div class="mb-6 sm:mb-8">
+        <label class="block text-blue-900 font-semibold mb-2 text-sm sm:text-base">PASSPORT SIZE PHOTOGRAPH OF CHILD</label>
+        <input type="file" name="passport_photo" accept="image/*" class="w-full p-2 border border-blue-200 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 text-sm">
     </div>
 
-    <div class="mb-8">
-        <h3 class="text-xl font-semibold text-blue-900 mb-4">Select Class:</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="mb-6 sm:mb-8">
+        <h3 class="text-lg sm:text-xl font-semibold text-blue-900 mb-4">Select Class:</h3>
+        <div class="grid grid-cols-1 gap-2 sm:gap-4">
             <label class="flex items-center space-x-2 p-2 hover:bg-blue-50 rounded">
                 <input type="radio" name="class" value="pre-nursery" class="text-blue-600">
-                <span>Pre-Nursery (2 years as of 1st Sep)</span>
+                <span class="text-sm sm:text-base">Pre-Nursery (2 years as of 1st Sep)</span>
             </label>
             <label class="flex items-center space-x-2 p-2 hover:bg-blue-50 rounded">
                 <input type="radio" name="class" value="nursery" class="text-blue-600">
-                <span>Nursery (3 years as of 1st Sep)</span>
+                <span class="text-sm sm:text-base">Nursery (3 years as of 1st Sep)</span>
             </label>
             <!-- Repeat for other classes with same styling -->
         </div>
     </div>
 
-    <div class="mb-8">
-        <label class="block text-blue-900 font-semibold mb-2">Start date:</label>
+    <div class="mb-6 sm:mb-8">
+        <label class="block text-blue-900 font-semibold mb-2 text-sm sm:text-base">Start date:</label>
         <input type="date" name="start_date" class="w-full p-2 border border-blue-200 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
     </div>
 
-    <section class="mb-8">
-        <h3 class="text-xl font-semibold text-blue-900 mb-4 pb-2 border-b border-blue-200">1. STUDENT INFORMATION</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <section class="mb-6 sm:mb-8">
+        <h3 class="text-lg sm:text-xl font-semibold text-blue-900 mb-4 pb-2 border-b border-blue-200">1. STUDENT INFORMATION</h3>
+        <div class="grid grid-cols-1 gap-4 sm:gap-6">
             <div class="form-group">
-                <label class="block text-blue-900 font-semibold mb-2">Full name:</label>
+                <label class="block text-blue-900 font-semibold mb-2 text-sm sm:text-base">Full name:</label>
                 <input type="text" name="full_name" required class="w-full p-2 border border-blue-200 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
             </div>
             <!-- Continue with other form groups using same styling -->
         </div>
     </section>
 
-    <section class="mb-8">
-        <h3 class="text-xl font-semibold text-blue-900 mb-4 pb-2 border-b border-blue-200">2. PARENT/CARER CONTACT INFORMATION</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-blue-50 p-6 rounded-lg">
-                <h4 class="text-lg font-semibold text-blue-900 mb-4">FIRST CONTACT</h4>
+    <section class="mb-6 sm:mb-8">
+        <h3 class="text-lg sm:text-xl font-semibold text-blue-900 mb-4 pb-2 border-b border-blue-200">2. PARENT/CARER CONTACT INFORMATION</h3>
+        <div class="grid grid-cols-1 gap-4 sm:gap-8">
+            <div class="bg-blue-50 p-4 sm:p-6 rounded-lg">
+                <h4 class="text-base sm:text-lg font-semibold text-blue-900 mb-4">FIRST CONTACT</h4>
                 <!-- First contact fields with same styling as above -->
             </div>
-            <div class="bg-blue-50 p-6 rounded-lg">
-                <h4 class="text-lg font-semibold text-blue-900 mb-4">SECOND CONTACT</h4>
+            <div class="bg-blue-50 p-4 sm:p-6 rounded-lg">
+                <h4 class="text-base sm:text-lg font-semibold text-blue-900 mb-4">SECOND CONTACT</h4>
                 <!-- Second contact fields with same styling -->
             </div>
         </div>
@@ -328,7 +328,7 @@
 
     <!-- Continue with other sections using same styling pattern -->
 
-    <button type="submit" class="w-full bg-blue-900 text-white py-3 px-6 rounded-lg hover:bg-blue-800 transition duration-200 font-semibold text-lg">
+    <button type="submit" class="w-full bg-blue-900 text-white py-2 sm:py-3 px-4 sm:px-6 rounded-lg hover:bg-blue-800 transition duration-200 font-semibold text-base sm:text-lg">
         Submit Application
     </button>
 </form>
